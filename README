@@ -6,3 +6,18 @@ entering enter in between allocation and filling.
 Weird use-cases include forcing the freebsd kernel to release
 otherwise cached data to make room for the ZFS ARC, and testing what
 counts towards resident set size.
+
+Tested on FreeBSD and Debian.
+
+== Usage ==
+
+Build:
+
+  make
+
+Run:
+
+  ./alloctest mmap 100
+  ./alloctest malloc 100
+
+
