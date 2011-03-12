@@ -1,0 +1,8 @@
+= Trivial allocation test =
+
+Allocates memory with malloc or mmap and fills in. Prompts for user
+entering enter in between allocation and filling.
+
+Weird use-cases include forcing the freebsd kernel to release
+otherwise cached data to make room for the ZFS ARC, and testing what
+counts towards resident set size.
