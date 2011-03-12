@@ -17,7 +17,8 @@ Build:
 
 Run:
 
-  ./alloctest mmap 100
   ./alloctest malloc 100
+  ./alloctest mmap-write ./bigfile 100
+  ./alloctest mmap-read ./bigfile 100
 
 
